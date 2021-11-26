@@ -53,6 +53,12 @@ Gọi hàm:
     tên_hàm(a, b, ...);
     x = tênhàm(a, b, ...);
 
+#### Mảng
+
+[pta, ptb, ptc, ...]
+n = độ dài = số lượng phần tử
+Chỉ số: được đánh liên tục từ 0 đến n-1
+
 #### Bài tập:
 
 1. Cho phép nhập vào 2 số. Hãy tính tổng 2 số đó.
