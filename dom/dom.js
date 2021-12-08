@@ -42,6 +42,31 @@ btn3.addEventListener("click", function () {
   alert("Bye");
 });
 
+let btn4 = document.getElementsByTagName("button")[3];
+btn4.addEventListener("click", function () {
+  // Tạo thẻ li
+  let li = document.createElement("li");
+  li.innerHTML = "Chuối";
+
+  // Lấy thẻ ul
+  let ul = document.getElementsByTagName("ul")[0];
+
+  // Thêm li vào làm con của ul
+  ul.appendChild(li);
+  console.log(ul);
+});
+
+let btn5 = document.getElementsByTagName("button")[4];
+btn5.addEventListener("click", function () {
+  // Lấy thẻ ul
+  let ul = document.getElementsByTagName("ul")[0];
+
+  let li = ul.children[0];
+
+  // Xóa thẻ li
+  li.remove();
+});
+
 //getBody();
 
 //getLi();

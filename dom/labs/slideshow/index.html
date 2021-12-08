@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        .slideshow img {
+            width: 100%;
+            animation: fade 2s;
+            display: none;
+        }
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="img/anh1.jpg" alt="">
+        <img src="img/anh2.jpg" alt="">
+        <img src="img/anh3.jpg" alt="">
+        <img src="img/anh4.jpg" alt="">
+    </div>
+
+    <script>
+        let index = 0;
+        let slideshow = document.getElementsByClassName("slideshow")[0];
+        let images = slideshow.children;
+        
+        // Chuyển tất cả các img con của slideshow thành display:none;
+        // for (let i = 0; i < images.length; i++) {
+        //     images[i].style.display = "none";
+        // }
+
+        showImg(index);
+        setInterval(nextSlide, 2000);
+
+        // Hiện 1 bức ảnh bất kỳ
+        function showImg(index) {
+            images[index].style.display = "block";
+        }
+        function hideImg(index) {
+            images[index].style.display = "none";
+        }
+        // Hàm nextSlide
+        function nextSlide() {
+            hideImg(index);
+            index++;
+            if (index >= images.length) index = 0;
+            showImg(index);
+        }
+        
+    </script>
+</body>
+</html>

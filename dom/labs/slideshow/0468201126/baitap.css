@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size:62.5%;
+}
+
+div.sideshow{
+    margin:0px 0.65% 0px 0.65%;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+.btn{
+    width: 100%;
+    position:absolute;
+    top: 25%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.btn div{
+    margin-left: 0.65%;
+    margin-right: 0.65%;
+    padding: 0.5%;
+    
+}
+
+i {
+    font-size:2rem;
+}
+.btn div:hover{
+    background: rgb(255, 104, 205);
+}
+
+#img {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
