@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <nav class="main-nav">
+        <ul>
+            <li><a class="signin" href="#0">Sign in</a></li>
+            <li><a class="signup" href="#0">Sign up</a></li>
+        </ul>
+    </nav> -->
+    
+    <div class="user-modal">
+            <div class="user-modal-container">
+    
+                <div id="signup">
+                    <form class="form">
+                        <p class="fieldset">
+                            <label class="image-replace username" for="signup-username">Username</label>
+                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                            <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <label class="image-replace email" for="signup-email">E-mail</label>
+                            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                            <span class="error-message">Enter a valid email address!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <label class="image-replace password" for="signup-password">Password</label>
+                            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+                            <a href="#0" class="hide-password">Show</a>
+                            <span class="error-message">Your password has to be at least 6 characters long!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input type="checkbox" id="accept-terms">
+                            <label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input class="full-width has-padding" type="submit" value="Create account">
+                        </p>
+                    </form>
+    
+                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
