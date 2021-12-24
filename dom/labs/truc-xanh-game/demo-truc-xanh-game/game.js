@@ -92,7 +92,7 @@ function createBoard() {
           if (card1.className === card2.className) {
             success.play();
             diem++;
-            if (diem == 1) {
+            if (diem == cardArray.length / 2) {
               document.getElementById("wrapper").style.display = "block";
               setTimeout(function () {
                 win.play();
