@@ -72,7 +72,7 @@ function check() {
 // Hàm xử lý khi user click vào card
 function clickCard() {
   if (accepted == true) {
-    this.src = cardArray[i].img;
+    this.src = cardArray[this.id].img;
     dem++;
     // Thay đổi src của img cho giống với data
     if (dem % 2 == 0) {
@@ -101,6 +101,7 @@ function createBoard() {
     // Tạo ra một thẻ img có src
     let img = document.createElement("img");
     img.src = "./images/blank.png";
+    img.id = i;
 
     // Thêm sự kiện click cho image
     img.addEventListener("click", clickCard);
